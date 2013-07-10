@@ -12,6 +12,7 @@ Commands:
     l[ist]
 List MBTA **bus** stops, and their associated tags. No subway stops.
 
+
     s[tops] [route tag]
 List the stops on a given bus route, and their associated IDs and tags
 
@@ -39,11 +40,13 @@ This message
 Examples:
 ---------
 
-Search for bus stops on a bus line:
++ Search for bus stops on a bus line:
+
     $ ./mbta.py stops 71
       [bunch of stops]
 
-Get bus predictions:
++ Get bus predictions:
+
     $ ./mbta.py bus 71 2037
       Stop: Mt Auburn St @ Winsor Ave
       
@@ -51,14 +54,16 @@ Get bus predictions:
        3 min 
       23 min
 
-Get subway predictions:
++ Get subway predictions:
+
     $ ./mbta.py pred orange down
       Stop: Downtown Crossing
        Destionation: Sullivan Square
          13 min
          ...
 
-Use abbreviated commands:
++ Use abbreviated commands:
+
     $ ./mbta.py p r harv
       Stop: Harvard Square
        Destination: Ashmont
@@ -66,7 +71,8 @@ Use abbreviated commands:
         10 min
         ...
 
-Use faves:
++ Use faves:
+
     $ ./mbta.py f set home r harv
     $ ./mbta.py pred home
       Stop: Harvard Square
@@ -75,7 +81,8 @@ Use faves:
         10 min
         ...
 
-Use recursive faves:
++ Use recursive faves:
+
     $ ./mbta.py f set home r harv
     $ ./mbta.py f set h home
     $ ./mbta.py p h
