@@ -42,48 +42,48 @@ Examples:
 
 + Search for bus stops on a bus line:
 
-    $ ./mbta.py stops 71
-      [bunch of stops]
+        $ ./mbta.py stops 71
+          [bunch of stops]
 
 + Get bus predictions:
 
-    $ ./mbta.py bus 71 2037
-      Stop: Mt Auburn St @ Winsor Ave
-      
-      Direction: Watertown Square via Mt. Auburn St.
-       3 min 
-      23 min
+        $ ./mbta.py bus 71 2037
+          Stop: Mt Auburn St @ Winsor Ave
+          
+          Direction: Watertown Square via Mt. Auburn St.
+           3 min 
+          23 min
 
 + Get subway predictions:
 
-    $ ./mbta.py pred orange down
-      Stop: Downtown Crossing
-       Destionation: Sullivan Square
-         13 min
-         ...
+        $ ./mbta.py pred orange down
+          Stop: Downtown Crossing
+           Destionation: Sullivan Square
+             13 min
+             ...
 
 + Use abbreviated commands:
 
-    $ ./mbta.py p r harv
-      Stop: Harvard Square
-       Destination: Ashmont
-         8 min
-        10 min
-        ...
+        $ ./mbta.py p r harv
+          Stop: Harvard Square
+           Destination: Ashmont
+             8 min
+            10 min
+            ...
 
 + Use faves:
 
-    $ ./mbta.py f set home r harv
-    $ ./mbta.py pred home
-      Stop: Harvard Square
-       Destination: Ashmont
-         8 min
-        10 min
-        ...
+        $ ./mbta.py f set home r harv
+        $ ./mbta.py pred home
+          Stop: Harvard Square
+           Destination: Ashmont
+             8 min
+            10 min
+            ...
 
 + Use recursive faves:
 
-    $ ./mbta.py f set home r harv
-    $ ./mbta.py f set h home
-    $ ./mbta.py p h
-      [same as above]
+        $ ./mbta.py f set home r harv
+        $ ./mbta.py f set h home
+        $ ./mbta.py p h
+          [same as above]
