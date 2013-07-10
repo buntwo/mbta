@@ -4,7 +4,7 @@ mbta.py
 A script for viewing predictions of MBTA buses and subway lines. Currently supports all bus lines and Red, Blue, and Orange subway lines (no Green line).
 
 
-`Usage: ./mbta.py [[command] [arguments...]]`
+Usage: `./mbta.py [command] [arguments...]`
 
 Commands:
 --------
@@ -29,12 +29,11 @@ Set alias to commands. See examples below. Spaces in commands are ok
 
     f[ave] delete [aliases...]
 Deletes aliases from faves
-
 File where aliases are stored is configurable in the script
 Aliases can be recursive!
 
     help
-This message
+A help message
 
 
 Examples:
